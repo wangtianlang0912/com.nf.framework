@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dip"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/common_dialog_txt_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minHeight="40dp"
+        android:minWidth="150dp"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+</ScrollView>

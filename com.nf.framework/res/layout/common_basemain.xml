@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_base_main_fragmentlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_layout_bg" >
+
+  <!--   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/common_layout_bg_logo" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_top_navigationbar" 
+         	   android:id="@+id/common_basemain_navigationbar_layout"
+            />
+
+        <LinearLayout
+            android:id="@+id/common_basemain_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1" />
+    </LinearLayout>
+
+</FrameLayout>

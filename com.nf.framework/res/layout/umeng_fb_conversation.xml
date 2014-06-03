@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/umeng_fb_conversation_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:background="@color/common_navigate_bg"
+        android:gravity="center"
+        android:text="产品反馈"
+        android:textColor="#FFFFFF"
+        android:textSize="20dip" />
+
+    <com.umeng.fb.ui.ThreadView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="1.0"
+        android:background="#EFEFEF"
+        android:cacheColorHint="#EEEEEE"
+        android:divider="#EFEFEF" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#d5d5d5" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#c6c6c6" />
+
+    <RelativeLayout
+        android:id="@+id/umeng_fb_bottom_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/umeng_fb_bottom_banner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <EditText
+            android:id="@+id/umeng_fb_editTxtFb"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:padding="5dp"
+            android:background="@drawable/common_edit_bg"
+            android:layout_toLeftOf="@+id/umeng_fb_btnSendFb"
+            android:layout_weight="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/umeng_fb_btnSendFb"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/common_btn_selector"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

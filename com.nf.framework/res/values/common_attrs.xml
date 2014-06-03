@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerControl">
+        <attr name="barColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="fadeDelay" format="integer" />
+        <attr name="fadeDuration" format="integer" />
+        <attr name="roundRectRadius" format="dimension" />
+    </declare-styleable>
+    <!-- 异步加载图片控件 -->
+    <declare-styleable name="PorterDuffView">
+        <attr name="porterduffMode" format="boolean"></attr>
+    </declare-styleable>
+    <!-- navigate控件 -->
+    <declare-styleable name="navigation">
+        <attr name="imageResource" format="reference"></attr>
+        <attr name="text" format="string"></attr>
+        <attr name="textLeft" format="boolean"></attr>
+        <attr name="textRight" format="boolean"></attr>
+        <attr name="imageViewWidth" format="dimension"></attr>
+        <attr name="imageViewHeight" format="dimension"></attr>
+    </declare-styleable>
+    <!-- 显示svg的imageVIew -->
+    <declare-styleable name="SvgImageView">
+        <attr name="android:src" />
+    </declare-styleable>
+    <declare-styleable name="SvgDrawable">
+        <attr name="android:src" />
+        <attr name="android:antialias" />
+        <attr name="android:filter" />
+        <attr name="android:dither" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <!-- 瀑布流 -->
+    <declare-styleable name="StaggeredGridView">
+        <attr name="drawSelectorOnTop" format="boolean" />
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+
+</resources>

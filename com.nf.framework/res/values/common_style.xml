@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 标题栏主标题样式 -->
+    <style name="common_navigate_title_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+      <!--   <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 加载对话框样式 -->
+    <style name="common_progress_dialog_style" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- 对话框样式 -->
+    <style name="common_base_dialog_style" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+ <!-- 对话框页面样式 -->
+ 	<style name="common_base_dialog_paper_style" parent="@android:Theme.Dialog">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:minWidth">250dp</item>
+    </style>
+    <style name="common_base_dialog_btn_style" parent="@android:Theme.Dialog">
+        <item name="android:background">@drawable/common_btn_selector</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+   
+</resources>

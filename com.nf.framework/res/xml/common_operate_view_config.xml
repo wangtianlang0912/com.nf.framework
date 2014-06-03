@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    
+    <operate_view_item id="0">@layout/operate_item_0</operate_view_item>
+    <operate_view_item id="1">@layout/operate_item_1</operate_view_item>
+    <operate_view_item id="2">@layout/operate_item_end</operate_view_item>
+</resources>  

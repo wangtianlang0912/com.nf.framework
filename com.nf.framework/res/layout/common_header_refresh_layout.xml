@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/common_header_refresh_layout_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+            android:id="@+id/common_header_refresh_layout_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 提示 -->
+
+            <TextView
+                android:id="@+id/common_header_refresh_layout_tipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!-- 最近更新 -->
+
+            <TextView
+                android:id="@+id/common_header_refresh_layout_lastUpdatedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上次更新"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- 箭头图像、进度条 -->
+
+        <FrameLayout
+            android:id="@+id/common_header_refresh_layout_framelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/common_header_refresh_layout_txt" >
+
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/common_header_refresh_layout_arrowImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/common_arrow_black" />
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:id="@+id/common_header_refresh_layout_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/common_progressbar_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

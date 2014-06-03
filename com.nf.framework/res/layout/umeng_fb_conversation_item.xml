@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_fb_atomLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/umeng_fb_atom_left_margin"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/umeng_fb_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="6dip"
+        android:layout_weight="1"
+        android:background="@drawable/umeng_fb_user_bubble" >
+
+        <TextView
+            android:id="@+id/umeng_fb_atomtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:text="This is Content"
+            android:textColor="#6F6F6F"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/umeng_fb_stateOrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/umeng_fb_atomtxt"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="7dip"
+            android:text="This is State or Send Time"
+            android:textColor="#BDBDBD"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/umeng_fb_atom_right_margin"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

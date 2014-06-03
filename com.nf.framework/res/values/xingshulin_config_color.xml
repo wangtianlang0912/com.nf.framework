@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layout 背景 -->
+    <color name="common_layout_bg">#DDDDDD</color>
+    <!-- 标题栏 -->
+    <color name="common_navigate_bg">#ae2c27</color>
+
+    <!-- 通用按钮点击 -->
+    <color name="common_btn_selector_normal">@color/common_navigate_bg</color>
+     
+    <color name="common_btn_selector_pressed">#c98885</color>
+   
+     <!--标题 导航按钮点击 -->
+    <color name="common_navigate_btn_selector_normal">@color/common_navigate_bg</color>
+     
+    <color name="common_navigate_btn_selector_pressed">#5E0400</color>
+    
+    <!-- tab按钮点击 -->
+    <color name="common_tab_btn_selector_selected">@color/common_navigate_bg</color>
+     
+    <color name="common_tab_btn_selector_unselect">@color/white</color>
+    <!-- edit inner btn  -->
+	 <color name="common_edit_inner_btn_selector_normal">#fdb17e</color>  
+	 <color name="common_edit_inner_btn_selector_pressed">#f7971c</color> 
+
+    <!-- menu 文字颜色 -->
+    <color name="common_menu_txt_color">#333333</color>
+     
+    <!-- web browser main bg -->
+    <color name="common_web_browser_main_bg">#eeeeee</color>
+    <color name="common_web_toolbar_item_selector_pressed">#E7EFE2</color>
+    <color name="common_web_toolbar_item_selector_normal">#eeeeee</color>
+    
+</resources>

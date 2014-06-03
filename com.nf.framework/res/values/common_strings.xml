@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="success">操作成功</string>
+   <string name="crash_exception">服务连接异常，请稍后再试</string>
+   <string name="net_exception">网络异常，请稍后再试</string>
+   <string name="null_value">查询数据为空</string>
+   <string name="unlogin">您没有登录，无法获取数据</string> 
+   <string name="editview_null_data">关键字不能为空</string> 
+   <string name="logoingData">数据加载中，请稍后。。。</string> 
+   
+   
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+   
+    <string name="common_base_dialog_title">提示</string>
+    <string name="common_base_dialog_left_btn_txt">left</string>
+    <string name="common_base_dialog_right_btn_txt">right</string>
+</resources>

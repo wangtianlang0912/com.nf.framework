@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+<!-- 对话框样式 -->
+ <style name="MyTheme1" parent="@android:style/Theme.Dialog">
+ </style>
+ <!-- notitlebar 并且全屏 -->
+  <style name="fullscreen" parent="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen">
+ </style>
+  <!-- notitlebar -->
+  <style name="notitlebar" parent="@android:style/Theme.Wallpaper.NoTitleBar">
+ </style>
+ </resources>

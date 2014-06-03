@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 黑色圆点 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="3dp"
+    android:shape="oval" >
+
+    <solid android:color="#666666" />
+
+    <corners android:radius="5dp" />
+
+    <padding
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp" />
+
+</shape>

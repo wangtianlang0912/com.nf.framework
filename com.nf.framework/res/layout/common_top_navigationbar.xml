@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_top_title_part_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/common_navigate_bg" >
+
+    <!-- zuo -->
+
+    <ImageButton
+        android:id="@+id/common_base_toptitle_left_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/common_navigate_btn_selector"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <!-- 右 -->
+
+    <RelativeLayout
+        android:id="@+id/common_base_toptitle_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <!-- 右侧图片按钮 -->
+
+        <ImageButton
+            android:id="@+id/common_base_toptitle_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/common_navigate_btn_selector"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <!-- 右侧图片上方文字 -->
+
+         <TextView
+            android:id="@+id/common_base_toptitle_right_textview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:background="@drawable/common_navigate_txt_update_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/common_base_top_title_textview"
+        style="@style/common_navigate_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp" />
+
+</RelativeLayout>

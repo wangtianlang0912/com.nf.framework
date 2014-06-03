@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/common_notification_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_download" />
+
+    <TextView
+        android:id="@+id/common_notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/common_notification_image"
+        android:paddingLeft="6dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/common_notification_txt_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_notification_image"
+        android:paddingTop="2dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/cyan" />
+
+    <ProgressBar
+        android:id="@+id/common_notification_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/common_notification_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/common_notification_txt_percent"
+        android:layout_below="@id/common_notification_title"
+        android:paddingLeft="6dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp" />
+
+</RelativeLayout>

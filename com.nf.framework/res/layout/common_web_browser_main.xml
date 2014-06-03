@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_web_browser_main_bg" >
+
+    <!-- 底部菜单 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/common_web_main_top_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:id="@+id/common_web_toolbar_goback_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_web_toolbar_item_selector"
+                android:src="@drawable/common_web_toolbar_goback_btn_normal" />
+
+            <ImageView
+                android:id="@+id/common_web_toolbar_goforward_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/common_web_toolbar_goback_btn"
+                android:background="@drawable/common_web_toolbar_item_selector"
+                android:src="@drawable/common_web_toolbar_goforward_btn_normal" />
+
+            <ImageView
+                android:id="@+id/common_web_toolbar_browser_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_web_toolbar_item_selector"
+                android:src="@drawable/common_web_toolbar_browser_btn" />
+
+            <ImageView
+                android:id="@+id/common_web_toolbar_refresh_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@id/common_web_toolbar_browser_btn"
+                android:background="@drawable/common_web_toolbar_item_selector"
+                android:src="@drawable/common_web_toolbar_refresh_btn_clickable" />
+        </RelativeLayout>
+        <!-- 显示内容 -->
+
+        <WebView
+            android:id="@+id/common_web_main_web_context"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/common_web_main_top_bar_layout"
+            android:background="@color/common_web_browser_main_bg" />
+    </RelativeLayout>
+    <!-- 加载数据显示progressBar -->
+
+    <RelativeLayout
+        android:id="@+id/common_web_main_refesh_progressbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/common_web_main_refesh_progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/common_progressbar_bg" />
+    </RelativeLayout>
+
+</FrameLayout>
